@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Links</title>
+</head>
+<body>
+    <h1>Links</h1>
+    <ul>
+        <% links.forEach(link => { %>
+            <li>
+                <a href=<%= link.url %>><%= link.title %></a>
+                <a href="/links/edit/<%= link._id %>">Edit</a>
+                <form action="/links/delete/<%= link._id %>" method="POST" style="display: inline;">
+                    <button type="submit">Delete</button>
+                </form>
+            </li>
+        <% }) %>
+    </ul>
+    <a href="/links/new">Add New Link</a>
+</body>
+</html>
+<a href="/">Back to Home Page</a>

@@ -1,0 +1,9 @@
+<% include ../layout.ejs %>
+<h1>Add New Technology</h1>
+<form action="/technologies" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" name="name" required>
+    <label for="description">Description:</label>
+    <textarea name="description" required></textarea>
+    <button type="submit">Add Technology</button>
+</form>

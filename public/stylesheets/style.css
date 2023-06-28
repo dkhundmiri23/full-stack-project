@@ -1,0 +1,100 @@
+
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color for the whole page */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+/* Add some spacing at the top and bottom of each section */
+header, footer, section {
+    margin-bottom: 20px;
+}
+
+/* Style the main header */
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* Style the navigation bar */
+nav ul {
+    display: flex;
+    justify-content: center;
+    background: #333;
+    list-style: none;
+}
+
+nav ul li {
+    flex: 1;
+}
+
+nav ul li a {
+    color: white;
+    display: block;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background: #444;
+}
+
+/* Style the main content area */
+section {
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px #aaa;
+}
+
+/* Style the form elements */
+form {
+    margin: 20px 0;
+}
+
+form label,
+form input,
+form textarea,
+form button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input,
+form textarea,
+form button {
+    width: 100%;
+    padding: 10px;
+}
+
+form button {
+    background: #333;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #444;
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    padding: 10px;
+}

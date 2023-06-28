@@ -1,0 +1,10 @@
+<% include ../layout.ejs %>
+<h1>Edit Link</h1>
+<form action="/links/update/<%= link._id %>" method="POST">
+    <input type="hidden" name="_method" value="PUT">
+    <label for="title">Title:</label>
+    <input type="text" name="title" value="<%= link.title %>" required>
+    <label for="url">URL:</label>
+    <input type="url" name="url" value="<%= link.url %>" required>
+    <button type="submit">Update Link</button>
+</form>
