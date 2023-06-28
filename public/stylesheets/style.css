@@ -87,6 +87,7 @@ form button {
     color: #fff;
     border: 0;
     cursor: pointer;
+    max-width: 5em;
 }
 
 form button:hover {
